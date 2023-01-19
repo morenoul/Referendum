@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REFERÈNDUM D'AUTODETERMINACIÓ DE CATALUNYA 2022"
+        android:textAlignment="center"
+        android:textColor="#0E0E0E"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.464"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.066" />
+
+    <TextView
+        android:id="@+id/descripcio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:contentDescription="@string/app_name"
+        android:text="Voleu que Catalunya sigui un estat independent en forma de república?"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/titol2"
+        tools:layout_editor_absoluteX="1dp"
+        tools:text="Voleu que Catalunya sigui un estat independent en forma de república?" />
+
+    <CheckBox
+        android:id="@+id/si"
+        android:layout_width="106dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="140dp"
+        android:text="SI"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcio" />
+
+    <CheckBox
+        android:id="@+id/no"
+        android:layout_width="106dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginBottom="17dp"
+        android:text="NO"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/votar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/si"
+        app:layout_constraintTop_toBottomOf="@+id/catalunyaImage" />
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginEnd="114dp"
+        android:layout_marginBottom="8dp"
+        android:text="Marqueu l'opció que desitgeu"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/footer2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/votar"
+        tools:text="Marqueu l'opció que desitgeu" />
+
+    <TextView
+        android:id="@+id/footer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Marque la opción que desee | Mercatz era opcion que dsesiretz"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@+id/footer"
+        tools:layout_editor_absoluteX="8dp"
+        tools:text="Marque la opción que desee | Mercatz era opcion que dsesiretz" />
+
+    <TextView
+        android:id="@+id/titol2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="REFERÉNDUM DE AUTODETERMINACIÓN DE CATALUÑA 2022"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/titol"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="REFERÉNDUM DE AUTODETERMINACIÓN DE CATALUÑA 2022" />
+
+    <TextView
+        android:id="@+id/titol3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="REFERENDUM D'AUTODETERMINACION DE CATALONHA 2022"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@+id/titol2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:text="REFERENDUM D'AUTODETERMINACION DE CATALONHA 2022" />
+
+    <ImageView
+        android:id="@+id/catalunyaImage"
+        android:layout_width="129dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="141dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descripcio"
+        app:srcCompat="@drawable/cat" />
+
+    <Button
+        android:id="@+id/votar"
+        android:layout_width="167dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="162dp"
+        android:text="Votar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/si"
+        tools:text="Votar" />
+
+</android.support.constraint.ConstraintLayout>
